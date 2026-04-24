@@ -5,18 +5,21 @@ import { CiHeart } from "react-icons/ci";
 const Header = () => {
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Products", path: "/products" },
+    { name: "Shop", path: "/shop" },
     { name: "Contact", path: "/contact" },
-    { name: "About", path: "/about" },
+    { name: "What new", path: "/what-new" },
     { name: "Blog", path: "/blog" },
+    { name: "About", path: "/about" },
   ];
   return (
     <>
       <header className="flex items-center justify-between border-b border-gray-300 bg-slate-100 p-2">
-        <div className="flex gap-2 items-center">
-          <img src="/e-commerce-logo.png" alt="" className="max-w-[2.5em]" />
-          <h1 className="font-bold text-2xl">Gefclusive</h1>
-        </div>
+        <Link to="/">
+          <div className="flex gap-2 items-center">
+            <img src="/e-commerce-logo.png" alt="" className="max-w-[2.5em]" />
+            <h1 className="font-bold text-2xl">Gefclusive</h1>
+          </div>
+        </Link>
         <nav>
           <ul className="flex gap-8">
             {navLinks.map((link) => (
@@ -29,7 +32,9 @@ const Header = () => {
         <div className="flex gap-4 items-center">
           <FaMagnifyingGlass size={20} />
           <MdOutlineShoppingCart size={20} />
-          <CiHeart size={20} className="font-bold" />
+          <Link to="/user/wishlist">
+            <CiHeart size={20} className="font-bold" />
+          </Link>
           <div>
             <Link to="/auth/register">
               <button className="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-800">

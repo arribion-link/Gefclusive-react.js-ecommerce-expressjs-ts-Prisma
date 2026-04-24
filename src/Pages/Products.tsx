@@ -1,5 +1,5 @@
-import ProductCard from "./card/ProductCard";
-import Pagenation from "./Pagenation";
+import ProductCard from "../components/product/card/ProductCard";
+import Pagenation from "../components/product/Pagenation";
 const Products = () => {
   return (
     <section className="mx-4 my-[12em]  ">

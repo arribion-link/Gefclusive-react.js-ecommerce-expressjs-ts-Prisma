@@ -1,4 +1,4 @@
-import Products from "../../components/product/Products";
+import Products from "../Products";
 import Recommend from "../../components/recommendation/Recommend";
 import FlashSale from "../../components/product/flashsale/FlashSale";
 import Hero from "../../components/Hero";
