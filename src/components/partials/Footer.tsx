@@ -1,5 +1,5 @@
-import "./footer.css"
-import { Link } from "react-router-dom"
+
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
@@ -41,7 +41,10 @@ const Footer = () => {
       <hr />
       <div>
         <div>
-            <h4>copyrights &copy; { new Date().getFullYear() } e-shop. All Rights Reserved.</h4>
+          <h4>
+            copyrights &copy; {new Date().getFullYear()} e-shop. All Rights
+            Reserved.
+          </h4>
         </div>
         <div>
           <ul>
@@ -52,6 +55,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

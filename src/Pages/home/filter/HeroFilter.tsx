@@ -1,8 +1,8 @@
-import "./sidebar.css"
 
-const Sidebar = () => {
+
+const HeroFilter = () => {
   return (
-    <aside>
+    <aside className="flex-1 border border-slate-400 h-[75vh] p-3 max-w-[20vw]  ">
       <div>
         <h4>All Products</h4>
       </div>
@@ -19,4 +19,4 @@ const Sidebar = () => {
   );
 }
 
-export default Sidebar
+export default HeroFilter
