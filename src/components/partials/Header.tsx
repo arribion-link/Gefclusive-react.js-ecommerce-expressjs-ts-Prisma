@@ -13,7 +13,10 @@ const Header = () => {
   return (
     <>
       <header className="flex items-center justify-between border-b border-gray-300 bg-slate-100 p-2">
-        <h1 className="font-bold text-2xl">Gefclusive</h1>
+        <div className="flex gap-2 items-center">
+          <img src="/e-commerce-logo.png" alt="" className="max-w-[2.5em]" />
+          <h1 className="font-bold text-2xl">Gefclusive</h1>
+        </div>
         <nav>
           <ul className="flex gap-8">
             {navLinks.map((link) => (

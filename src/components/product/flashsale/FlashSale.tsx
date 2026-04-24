@@ -2,6 +2,7 @@
 
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import FlashTimer from "./FlashTimer";
+import ProductCard from "../card/ProductCard";
 
 const FlashSale = () => {
   return (
@@ -21,6 +22,11 @@ const FlashSale = () => {
             </span>
           </div>
         </div>
+      </div>
+      {/*  */}
+      <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+        <ProductCard />
+        <ProductCard />
       </div>
     </section>
   );

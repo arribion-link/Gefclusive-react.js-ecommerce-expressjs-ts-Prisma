@@ -1,17 +1,17 @@
 import bestseller_drone from "../../assets/bestseller-drone.png"
-import bestseller_watch from "../../assets/bestseller-watch.png"
+// import bestseller_watch from "../../assets/bestseller-watch.png"
 const BestSelling = () => {
   return (
     <section className="p-4">
-      <div className="flex justify-between items-center relative">
-        <div className="flex-1">
-          <img src={bestseller_watch} alt="" className="max-w-[18em]  " />
+      <div className="flex justify-between items-start gap-12 relative">
+        <div className="flex-1 ">
+          <h1>Newly </h1>
         </div>
-        <div className="bg-slate-200 flex-2 ">
+        <div className="bg-sky-600 flex-2 min-h-[40vh]">
           <img
             src={bestseller_drone}
             alt=""
-            className="max-w-[30em] absolute right-0 top-0 "
+            className="max-w-[40em] absolute right-0 -top-25 "
           />
         </div>
       </div>

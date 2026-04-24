@@ -5,9 +5,10 @@ import ProductCard from "../product/card/ProductCard"
 const Recommend = () => {
   return (
     <section className="recommend-section">
-      <div className="recommend-header">
-        <h1>Explore our recommendations</h1>
-        <div>
+      <div className="recommend-header my-[4em] mt-[12em] ">
+        <h1 className="text-[clamp(2em,5vw,3em)] font-semibold">Explore our recommendations</h1>
+        <p></p>
+        <div className="flex items-center gap-8">
           <FaLeftLong />
           <FaRightLong />
         </div>
