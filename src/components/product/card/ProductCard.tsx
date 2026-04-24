@@ -5,7 +5,7 @@ const ProductCard = () => {
   return (
     <div className="border border-gray-300 rounded-lg p-2">
       <div className="relative">
-        <img src="https://placehold.net/product.svg" alt="" className="rounded-lg min-h-[40vh] bg-slate-400 animate-pulse" />
+        <img src="https://placehold.net/product.svg" alt="" className="rounded-lg min-h-[40vh] bg-slate-300 animate-pulse" />
         <div>
           <button className="wishlist-btn">Wishlist</button>
         </div>

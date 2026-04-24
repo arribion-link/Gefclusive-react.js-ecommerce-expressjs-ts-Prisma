@@ -2,21 +2,17 @@
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer">
+    <footer className="bg-slate-300 p-4 min-h-[50vh] ">
+      <div className="flex gap-8 justify-between">
         <div>
-          <h3>About</h3>
-          <ul>
-            <li>
-              <Link to="">Blog</Link>
-            </li>
-            <li>
-              <Link to="">Meet the Team</Link>
-            </li>
-            <li>
-              <Link to="">Contact Us</Link>
-            </li>
-          </ul>
+          <h3>Gefclusive</h3>
+          <h4>Subscribe</h4>
+          <div>
+            <form action="">
+              <label htmlFor="email"></label>
+              <input type="email" placeholder="Email..." />
+            </form>
+          </div>
         </div>
         <div>
           <h3>Support</h3>
@@ -35,23 +31,23 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div></div>
+        <div>
+
+        </div>
+        <div>
+          
+        </div>
       </div>
 
-      <hr />
+      <hr className="text-slate-400 mt-[5em] " />
       <div>
         <div>
-          <h4>
+          <h4 className="text-center py-[1em] ">
             copyrights &copy; {new Date().getFullYear()} e-shop. All Rights
             Reserved.
           </h4>
         </div>
-        <div>
-          <ul>
-            <li>Private Policy</li>
-            <li>Terms & coditions</li>
-          </ul>
-        </div>
+
       </div>
     </footer>
   );
