@@ -10,10 +10,13 @@ import Products from "./Pages/Products";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import WhatNew from "./Pages/WhatNew";
+import Login from "./Pages/auth/Login";
+// import NewsletterModel from "./Pages/utils/NewsletterModel";
 
 const App = () => {
   return (
     <>
+        {/* <NewsletterModel/> */}
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
@@ -26,6 +29,8 @@ const App = () => {
         </Route>
         <Route element={<NoNav />}>
           <Route path="/auth/register" element={<Register />} />
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/forgot-password" element={<Register />} />
         </Route>
       </Routes>
     </>

@@ -4,10 +4,10 @@ import { FaStar } from "react-icons/fa6";
 const ProductCard = () => {
   return (
     <div className="border border-gray-300 rounded-lg p-2">
-      <div className="relative">
+      <div className="relative bg-slate-100 mb-3">
         <img src="https://placehold.net/product.svg" alt="" className="rounded-lg min-h-[40vh] bg-slate-300 animate-pulse" />
-        <div>
-          <button className="wishlist-btn">Wishlist</button>
+        <div className="absolute top-2 left-2">
+          <button className="bg-amber-600 px-3  rounded-3xl text-white">Wishlist</button>
         </div>
       </div>
       <div>

@@ -4,10 +4,12 @@ import { Link } from "react-router-dom"
 const Promotions = () => {
   return (
     <div className="bg-green-700 p-2 flex justify-between items-center text-slate-200">
-      <div className="flex gap-3 items-center  ">
-        <FaPhone />
-        <h1>+254 99 77 46 53</h1>
-      </div>
+      <a href="https://we." target="_blank">
+        <div className="flex gap-3 items-center  ">
+          <FaPhone />
+          <h1>+254 99 77 46 53</h1>
+        </div>
+      </a>
       <div className="flex items-center gap-4">
         <span>
           <h2> Get 50% Off on Selected Items</h2>

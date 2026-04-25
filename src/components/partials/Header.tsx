@@ -31,10 +31,16 @@ const Header = () => {
         </nav>
         <div className="flex gap-4 items-center">
           <FaMagnifyingGlass size={20} />
-          <MdOutlineShoppingCart size={20} />
-          <Link to="/user/wishlist">
-            <CiHeart size={20} className="font-bold" />
-          </Link>
+          <span className="relative">
+            <span className="absolute -top-2 -right-1 text-red-500">1</span>
+            <MdOutlineShoppingCart size={20} />
+          </span>
+            <Link to="/user/wishlist">
+            <span className="relative">
+              <span className="absolute text-red-500 -top-2 rounded-full px-1 -right-1">0</span>
+                <CiHeart size={20} className="font-bold" />
+              </span>
+            </Link>
           <div>
             <Link to="/auth/register">
               <button className="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-800">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero_img from "../assets/hero-img.png"
 // import hero_img_2 from "../../assets/hero-img-2.png"
 // import hero_img_3 from "../../assets/hero-img-3.png";
@@ -18,10 +19,12 @@ const Hero = () => {
               Shop now and enjoy unbeatable prices on a wide range of products.
               Don't miss out on our exclusive offers and discounts!
             </p>
-            <button className="underline text-slate-200 my-[2em] flex items-end gap-2 ">
-              Shop Now
-              <BsArrowUpRight/>
-            </button>
+            <Link to="/shop">
+              <button className="underline text-slate-200 my-[2em] flex items-end gap-2 ">
+                Shop Now
+                <BsArrowUpRight/>
+              </button>
+            </Link>
           </div>
           <img src={hero_img} alt="" className="max-w-[23em]" />
         </div>

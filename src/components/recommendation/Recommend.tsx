@@ -4,7 +4,7 @@ import { FaRightLong, FaLeftLong } from "react-icons/fa6"
 import ProductCard from "../product/card/ProductCard"
 const Recommend = () => {
   return (
-    <section className="recommend-section">
+    <section className="bg-slate-100 px-4 py-5 my-[4em] min-h-[50vh]">
       <div className="recommend-header my-[4em] mt-[12em] ">
         <h1 className="text-[clamp(2em,5vw,3em)] font-semibold">Explore our recommendations</h1>
         <p></p>

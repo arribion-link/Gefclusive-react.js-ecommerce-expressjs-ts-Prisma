@@ -2,7 +2,7 @@ import ProductCard from "../components/product/card/ProductCard";
 import Pagenation from "../components/product/Pagenation";
 const Products = () => {
   return (
-    <section className="mx-4 my-[12em]  ">
+    <section className="px-4 py-5 my-[12em]  bg-slate-100">
       <span className="border-l-4 border-gray-700 rounded-[5px] font-bold text-slate-500  p-2">
        OUR PRODUCTS
       </span>
