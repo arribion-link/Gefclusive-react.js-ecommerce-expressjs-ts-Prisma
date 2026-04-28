@@ -1,7 +1,7 @@
-import cat_fashion_img from "../../../assets/cat-fashion.png"
-import cat_electronic_img from "../../../assets/cat-electronics.png"
-import cat_living_img from "../../../assets/cat-living.png"
-import cat_grocery from "../../../assets/cat-grocery.png"
+import cat_fashion_img from "../../assets/cat-fashion.png"
+import cat_electronic_img from "../../assets/cat-electronics.png"
+import cat_living_img from "../../assets/cat-living.png"
+import cat_grocery from "../../assets/cat-grocery.png"
 const BrowseCategories = () => {
   return (
     <section className="min-h-[20vh] mx-4">
@@ -25,11 +25,11 @@ const BrowseCategories = () => {
           />
         </div>
         <div className="bg-slate-300 rounded p-3 min-h-[30vh] cursor-pointer hover:shadow-lg">
-          <h1 className="font-bold text-2xl text-slate-300">Home & Living</h1>
+          <h1 className="font-bold text-2xl text-slate-600">Home & Living</h1>
           <img src={cat_living_img} alt="" />
         </div>
         <div className="bg-slate-300 rounded p-3 min-h-[30vh] relative cursor-pointer hover:shadow-lg">
-          <h1 className="font-bold text-2xl text-slate-300">
+          <h1 className="font-bold text-2xl text-slate-600">
             Grocery & Essentials
           </h1>
           <img src={cat_grocery} alt="" className="absolute bottom-0" />

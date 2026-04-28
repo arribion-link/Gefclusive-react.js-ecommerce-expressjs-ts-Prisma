@@ -13,7 +13,7 @@ const Recommend = () => {
           <FaRightLong />
         </div>
       </div>
-      <div className="recommend-grid">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4">
         <ProductCard />
         <ProductCard />
         <ProductCard />

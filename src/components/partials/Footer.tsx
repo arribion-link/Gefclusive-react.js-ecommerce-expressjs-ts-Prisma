@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-slate-200/90 p-4 min-h-[50vh] ">
-      <div className="flex gap-8 justify-between">
+      <div className="flex flex-wrap gap-8 justify-between">
         <div>
           <h3>Gefclusive</h3>
           <h4>Subscribe</h4>

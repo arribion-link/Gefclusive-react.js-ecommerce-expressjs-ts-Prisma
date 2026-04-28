@@ -8,7 +8,6 @@ const Header = () => {
     { name: "Shop", path: "/shop" },
     { name: "Contact", path: "/contact" },
     { name: "What new", path: "/what-new" },
-    { name: "Blog", path: "/blog" },
     { name: "About", path: "/about" },
   ];
   return (
@@ -20,13 +19,14 @@ const Header = () => {
             <h1 className="font-bold text-2xl">Gefclusive</h1>
           </div>
         </Link>
-        <nav>
+        <nav className="hidden md:block">
           <ul className="flex gap-8">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link to={link.path}>{link.name}</Link>
               </li>
             ))}
+            <button className="px-4 py-1 border border-slate-400 rounded-3xl">Admin-panel</button>
           </ul>
         </nav>
         <div className="flex gap-4 items-center">

@@ -4,13 +4,12 @@ import { Routes, Route } from "react-router-dom"
 import MainLayout from "./Pages/layout/MainLayout";
 import NoNav from "./Pages/layout/NoNav";
 import Register from "./Pages/auth/Register";
-import Blog from "./Pages/blog/Blog";
 import WishList from "./Pages/WishList";
-import Products from "./Pages/Products";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import WhatNew from "./Pages/WhatNew";
 import Login from "./Pages/auth/Login";
+import Shop from "./Pages/shop/Shop";
 // import NewsletterModel from "./Pages/utils/NewsletterModel";
 
 const App = () => {
@@ -20,8 +19,7 @@ const App = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/shop" element={<Products />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/what-new" element={<WhatNew />} />

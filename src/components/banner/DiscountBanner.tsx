@@ -1,7 +1,7 @@
 import discount_debit_cards from "../../assets/banner-debit-cards.png"
 const DiscountBanner = () => {
   return (
-    <section className="flex justify-between mt-[14em] mb-[4em] items-center mx-4 rounded-2xl shadow bg-sky-300 p-4">
+    <section className="flex flex-col-reverse md:flex-row justify-between mt-[14em] mb-[4em] items-center mx-4 rounded-2xl shadow bg-sky-300 p-4">
       <div>
               <h1 className="text-[clamp(2em,5vw,3.5em)] font-bold ">Get 5% Cash Discount</h1>
               <p>

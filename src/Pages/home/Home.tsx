@@ -2,7 +2,7 @@ import Products from "../Products";
 import Recommend from "../../components/recommendation/Recommend";
 import FlashSale from "../../components/product/flashsale/FlashSale";
 import Hero from "../../components/Hero";
-import BrowseCategories from "./filter/BrowseCategories";
+import BrowseCategories from "../filter/BrowseCategories";
 import DiscountBanner from "../../components/banner/DiscountBanner";
 import BestSelling from "../../components/product/BestSelling";
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <FlashSale />
       <BrowseCategories />
       <Products />
-      <BestSelling/>
+      <BestSelling />
       <Recommend />
       <DiscountBanner />
     </>

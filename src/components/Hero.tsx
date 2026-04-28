@@ -1,18 +1,13 @@
 import { Link } from "react-router-dom";
-import hero_img from "../assets/hero-img.png"
-// import hero_img_2 from "../../assets/hero-img-2.png"
-// import hero_img_3 from "../../assets/hero-img-3.png";
-// import hero_img_4 from "../../assets/hero-img-4.png"
-import HeroFilter from "../Pages/home/filter/HeroFilter";
-import { BsArrowUpRight } from "react-icons/bs";
+
+import HeroProduct from "../Pages/filter/HeroProduct";
 const Hero = () => {
   return (
-    <section className="flex justify-between gap-6 my-[1em] mx-4">
-      <HeroFilter />
-      <div className="flex-2 bg-slate-900 p-4 rounded">
-        <div className="flex gap-4">
-          <div>
-            <h1 className="text-[clamp(1.5em,4vw,2.1em)] text-slate-300 font-bold">
+    <section className="my-[1em] mx-4">
+      <div className="border border-slate-400 rounded">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className=" p-4">
+            <h1 className="text-[clamp(1.5em,4vw,2.5em)] text-slate-800 font-bold">
               Discover the Best Deals on Our E-commerce Platform
             </h1>
             <p className="text-gray-600 mt-4">
@@ -20,22 +15,16 @@ const Hero = () => {
               Don't miss out on our exclusive offers and discounts!
             </p>
             <Link to="/shop">
-              <button className="underline text-slate-200 my-[2em] flex items-end gap-2 ">
-                Shop Now
-                <BsArrowUpRight/>
-              </button>
+              <button className="font-semibold my-[2em] bg-black text-white px-8 py-1 rounded">Shop Now</button>
             </Link>
           </div>
-          <img src={hero_img} alt="" className="max-w-[23em]" />
-        </div>
-        <div className="flex gap-8">
-          {/* <img src={hero_img_2} alt="" className="max-w-[10em]" />
-          <img src={hero_img_3} alt="" className="max-w-[10em]" />
-          <img src={hero_img_4} alt="" className="max-w-[8em]" /> */}
+          <div className="bg-slate-300  p-4">
+            <HeroProduct />
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Hero
+export default Hero;

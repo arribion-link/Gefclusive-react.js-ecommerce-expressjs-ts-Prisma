@@ -7,16 +7,16 @@ import ProductCard from "../card/ProductCard";
 const FlashSale = () => {
   return (
     <section className="min-h-[50vh] px-4 py-5 my-[5em]  bg-slate-100">
-      <div className="flex justify-between items-start">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-start">
         <FlashTimer />
         <div>
-          <span className="text-4xl text-green-700 font-medium">
+          <span className="text-[clamp(2em,4vw,3em)] animate-pulse text-green-700 font-medium">
             TODAY FLASH SALES
           </span>
         </div>
       </div>
       {/*  */}
-      <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+      <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] my-[3em] ">
         <ProductCard />
         <ProductCard />
       </div>
