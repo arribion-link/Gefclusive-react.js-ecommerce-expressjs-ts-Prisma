@@ -6,8 +6,6 @@
 
 **MarketFlow** is a scalable, SEO-centric e-commerce engine designed for multi-vendor environments. It features a robust dynamic filtering system that allows users to navigate complex catalogs across **Fashion, Electronics, Home & Living, and Groceries** with ease.
 
-[Explore Demo](#) · [Report Bug](#) · [Request Feature](#)
-
 ---
 
 ## 🚀 Key Features
@@ -15,31 +13,32 @@
 ### 🔍 Advanced Faceted Search & Filtering
 
 Our granular filtering system is built for performance and precision
-*   **Fashion:** Filter by Size, Material, Brand, and Lifestyle (e.g., Sustainable, Athleisure).
-*   **Electronics:** Technical spec filters (RAM, Storage, Battery Life, Resolution).
-*   **Home & Living:** Dimensional filters (H/W/D) and Room-based categorization.
-*   **Groceries:** Dietary filters (Vegan, Gluten-Free) and Freshness indicators.
+
+**Fashion:** Filter by Size, Material, Brand, and Lifestyle (e.g., Sustainable, Athleisure).
+**Electronics:** Technical spec filters (RAM, Storage, Battery Life, Resolution).
+**Home & Living:** Dimensional filters (H/W/D) and Room-based categorization.
+**Groceries:** Dietary filters (Vegan, Gluten-Free) and Freshness indicators.
 
 ### 🏢 Multi-Vendor Ecosystem
 
-*   **Vendor Dashboards:** Individual portals for sellers to manage inventory and orders.
-*   **Performance Metrics:** Rating-based filtering to highlight top-performing vendors.
-*   **Fulfillment Isolation:** Options to filter by "Marketplace Shipped" vs. "Vendor Shipped."
+**Vendor Dashboards:** Individual portals for sellers to manage inventory and orders.
+**Performance Metrics:** Rating-based filtering to highlight top-performing vendors.
+**Fulfillment Isolation:** Options to filter by "Marketplace Shipped" vs. "Vendor Shipped."
 
 ### 📈 SEO & Performance
 
-*   **SSR (Server-Side Rendering):** Optimized for Google indexing and social sharing.
-*   **Dynamic Meta Tags:** Automatic SEO generation for product and category pages.
-*   **Core Web Vitals:** Optimized for LCP and FID to ensure high search rankings.
+**SSR (Server-Side Rendering):** Optimized for Google indexing and social sharing.
+**Dynamic Meta Tags:** Automatic SEO generation for product and category pages.
+**Core Web Vitals:** Optimized for LCP and FID to ensure high search rankings.
 
 ---
 
 ## 🛠️ Tech Stack
 
-*   **Frontend:** [e.g., Next.js, React, Tailwind CSS]
-*   **Backend:** [e.g., Node.js, Express, MongoDB]
-*   **State Management:** [e.g., Redux Toolkit, React Query]
-*   **Payments:** [e.g., Stripe, PayPal]
+**Frontend:** [e.g., Next.js, React, Tailwind CSS]
+**Backend:** [e.g., Node.js, Express, MongoDB]
+**State Management:** [e.g., Redux Toolkit, React Query]
+**Payments:** [e.g., Stripe, PayPal]
 
 ---
 
@@ -62,18 +61,17 @@ Our granular filtering system is built for performance and precision
 git clone https://github.com
 ```
 
-2. **Install Dependencies**
+2.**Install Dependencies**
 
 ```bash
 npm install
 ```
 
-3. **Setup Environment Variables**
+3.**Setup Environment Variables**
 
   Create a `.env` file and add your `DATABASE_URL` and `API_KEYS`.
 
-
-4. **Run Development Server**
+4.**Run Development Server**
 
    ```bash
    npm run dev
