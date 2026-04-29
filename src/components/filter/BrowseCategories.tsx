@@ -8,7 +8,7 @@ const BrowseCategories = () => {
       <span className="border-l-4 border-gray-700 rounded-[5px] font-bold text-slate-500  p-2">
         CATEGORIES
       </span>
-      <h1 className="my-[1em] text-[clamp(2em,5vw,3em)] font-bold text-center">
+      <h1 className="my-[1em] text-[clamp(2em,5vw,3em)] text-slate-300 font-bold text-center">
         Browse By Category
       </h1>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4 ">

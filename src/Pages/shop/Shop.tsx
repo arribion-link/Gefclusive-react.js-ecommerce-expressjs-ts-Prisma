@@ -1,5 +1,4 @@
-import ShopFilter from "../filter/ShopFilter"
-
+import ShopFilter from "../../components/filter/ShopFilter";
 
 const Shop = () => {
   return (
@@ -17,6 +16,6 @@ const Shop = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Shop
+export default Shop;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import HeroProduct from "../Pages/filter/HeroProduct";
+import HeroProduct from "./filter/HeroProduct";
 const Hero = () => {
   return (
     <section className="my-[1em] mx-4">
@@ -15,7 +15,9 @@ const Hero = () => {
               Don't miss out on our exclusive offers and discounts!
             </p>
             <Link to="/shop">
-              <button className="font-semibold my-[2em] bg-black text-white px-8 py-1 rounded">Shop Now</button>
+              <button className="font-semibold my-[2em] bg-black text-white px-8 py-1 rounded">
+                Shop Now
+              </button>
             </Link>
           </div>
           <div className="bg-slate-300  p-4">

@@ -1,13 +1,12 @@
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FaMagnifyingGlass, FaX } from "react-icons/fa6";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 const Header = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Shop", path: "/shop" },
     { name: "Contact", path: "/contact" },
-    { name: "What new", path: "/what-new" },
     { name: "About", path: "/about" },
   ];
   return (
@@ -23,38 +22,52 @@ const Header = () => {
           <ul className="flex gap-8">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <Link to={link.path}>{link.name}</Link>
+                <NavLink to={link.path}>{link.name}</NavLink>
               </li>
             ))}
-            <button className="px-4 py-1 border border-slate-400 rounded-3xl">Admin-panel</button>
+            <a href="/admin" target="_blank">
+              <button className="px-4 py-1 hover:cursor-pointer duration-100/90 border border-slate-400 rounded-3xl">
+                Admin-panel
+              </button>
+            </a>
           </ul>
         </nav>
         <div className="flex gap-4 items-center">
-          <FaMagnifyingGlass size={20} />
-          <span className="relative">
+          <Link to="/shop" className="hover:text-green-500 duration-400">
+            <FaMagnifyingGlass size={20} />
+          </Link>
+          <span className="relative hover:text-green-500 duration-400">
             <span className="absolute -top-2 -right-1 text-red-500">1</span>
             <MdOutlineShoppingCart size={20} />
           </span>
-            <Link to="/user/wishlist">
-            <span className="relative">
-              <span className="absolute text-red-500 -top-2 rounded-full px-1 -right-1">0</span>
-                <CiHeart size={20} className="font-bold" />
+          <Link to="/user/wishlist">
+            <span className="relative hover:text-green-500 duration-400">
+              <span className="absolute text-red-500 -top-2 rounded-full px-1 -right-1">
+                0
               </span>
-            </Link>
+              <CiHeart size={20} className="font-bold" />
+            </span>
+          </Link>
           <div>
             <Link to="/auth/register">
               <button className="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-800">
                 Sign Up
               </button>
             </Link>
-            {/* <img
-              src=""
-              alt="ES"
-              className="bg-slate-200 rounded-full border border-gray-300 py-3 px-2"
-            /> */}
           </div>
         </div>
       </header>
+      <div className="bg-slate-200 flex justify-center border-b border-slate-300 ">
+        <form action="" className="my-3 flex gap-4 items-center">
+          <label htmlFor="search"></label>
+          <input
+            type="text"
+            placeholder="search product"
+            className="py-1 px-3 border  border-slate-400 rounded-3xl "
+          />
+          <FaX />
+        </form>
+      </div>
     </>
   );
 };
