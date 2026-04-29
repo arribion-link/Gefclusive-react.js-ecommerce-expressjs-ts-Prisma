@@ -1,9 +1,10 @@
-import express from "express";
 import "dotenv/config";
+import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import connectDB from "./config/db.js";
 import connectCloudinary from "./config/cloudnary.js";
+import userRouter from "./routes/user.Route.js";
 const app = express();
 
 const PORT = process.env.PORT;
@@ -15,9 +16,7 @@ if (!PORT) {
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    
-});
+app.use("/v1/api/", userRouter);
 
 app.listen(PORT, () => {
     connectDB()
