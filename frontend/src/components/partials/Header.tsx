@@ -3,6 +3,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { useState } from "react";
+import useAuth from "../../../hooks/useAuth"
 const Header = () => {
   const navLinks = [
     { name: "Home", path: "/" },
@@ -57,12 +58,22 @@ const Header = () => {
             </span>
           </Link>
 
-          <div>
+          <div className="flex items-center gap-4 ">
+            {
+              useAuth() ? <span>
+              <img
+                src="https://placehold.net/avatar.svg"
+                alt="jeff"
+                className="max-w-[2em] bg-gray-200 border border-slate-500 rounded-full "
+              />
+            </span>: 
             <Link to="/auth/register">
               <button className="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-800">
                 Sign Up
               </button>
             </Link>
+            }
+           
           </div>
         </div>
       </header>
