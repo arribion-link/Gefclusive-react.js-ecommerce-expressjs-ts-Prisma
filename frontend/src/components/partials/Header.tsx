@@ -32,7 +32,7 @@ const Header = () => {
               </li>
             ))}
             <a href="/admin" target="_blank">
-              <button className="px-4 py-1 hover:cursor-pointer duration-100/90 border border-slate-400 rounded-3xl">
+              <button className="px-4 py-1 text-[5px] hover:cursor-pointer duration-100/90 border border-slate-400 rounded-3xl">
                 Admin-panel
               </button>
             </a>
