@@ -8,14 +8,10 @@ const Products = () => {
       </span>
       <h1 className="mt-[2em] mb-2 text-[clamp(2em,5vw,3em)] text-center font-bold">EXPLORE OUR PRODUCT</h1>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
       </div>
       <div className="flex justify-center my-[6em] ">
         <Pagenation />

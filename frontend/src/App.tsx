@@ -16,6 +16,7 @@ import ItemList from "./Pages/admin/ItemList";
 import Orders from "./Pages/admin/Orders";
 import AdminLogin from "./Pages/admin/AdminLogin";
 import ProductCart from "./Pages/cart/ProductCart";
+import ProductDetails from "./Pages/ProductDetails";
 // import NewsletterModel from "./Pages/utils/NewsletterModel";
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path={`/shop/:id`} element={<ProductDetails/>}/>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/user/wishlist" element={<WishList />} />
@@ -40,7 +42,7 @@ const App = () => {
         </Route>
 
         <Route element={<AdminLayout />}>
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/home" element={<Admin />} />
           <Route path="/admin/add-item" element={<AddItem />} />
           <Route path="/admin/item-list" element={<ItemList />} />
           <Route path="/admin/order" element={<Orders />} />
