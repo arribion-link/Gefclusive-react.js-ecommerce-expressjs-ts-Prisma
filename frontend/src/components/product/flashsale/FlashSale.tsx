@@ -17,8 +17,8 @@ const FlashSale = () => {
       </div>
       {/*  */}
       <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] my-[3em] ">
-        <ProductCard />
-        <ProductCard />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
       </div>
       <div className="flex items-center justify-between my-6 gap-4">
         <span className="bg-slate-300 rounded p-3">

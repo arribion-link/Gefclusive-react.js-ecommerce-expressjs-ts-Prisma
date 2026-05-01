@@ -20,9 +20,9 @@ const BestSelling = () => {
         Best Selling
       </span>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-[4em] ">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
       </div>
     </section>
   );

@@ -13,10 +13,10 @@ const Recommend = () => {
         </div>
       </div>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
+        <ProductCard name={""} description={""} reviews={0} price={0} image={""} />
       </div>
     </section>
   );
