@@ -6,6 +6,7 @@ import connectDB from "./config/db.js";
 import connectCloudinary from "./config/cloudnary.js";
 import userRouter from "./routes/user.Route.js";
 import productRouter from "./routes/product.Route.js";
+import cookieParser from "cookie-parser";
 const app = express();
 
 const PORT = process.env.PORT;
@@ -17,6 +18,7 @@ if (!PORT) {
 // middleware
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser())
 
 // endpoints
 app.use("/v1/api/user", userRouter);

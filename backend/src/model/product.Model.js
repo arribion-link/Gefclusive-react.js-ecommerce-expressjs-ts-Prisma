@@ -1,4 +1,3 @@
-import { timeStamp } from "console";
 import mongoose from "mongoose";
 
 const productSchema = mongoose.Schema({
@@ -24,7 +23,7 @@ const productSchema = mongoose.Schema({
   },
   subcategory: {
     required: true,
-    type: string,
+    type: String,
     },
     bestSeller: {
       type: Boolean
@@ -38,6 +37,7 @@ const productSchema = mongoose.Schema({
     }
 }, {timeStamp: true});
 
-const product_model = mongoose.models.product - collection ||
-    mongoose.model("product-collection", productSchema);
-export default productSchema;
+const product_model = mongoose.models.product ||
+  mongoose.model("product-collection", productSchema);
+  
+export default product_model;
