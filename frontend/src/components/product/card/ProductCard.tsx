@@ -11,8 +11,8 @@ type productTypes = {
 const ProductCard = (prop: productTypes) => {
   return (
     <div className="border border-gray-300 rounded-lg p-2">
-      <div className="relative bg-slate-100 mb-3">
-        <img src={`${prop.image}`} alt="" className="rounded-lg min-h-[40vh] bg-slate-300" />
+      <div className="relative bg-slate-200 mb-3 min-h-[40vh] rounded-lg">
+        {/* <img src={`${prop.image}`} alt="" className="rounded-lg min-h-[40vh] bg-slate-300" /> */}
         <div className="absolute top-2 left-2">
           <button className="bg-amber-600 px-3  rounded-3xl text-white">Wishlist</button>
         </div>

@@ -12,31 +12,28 @@ const BrowseCategories = () => {
         Browse By Category
       </h1>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4 ">
-        <div className="bg-slate-300 rounded p-3 min-h-[30vh] cursor-pointer hover:shadow-lg">
+        <div className="bg-slate-300 rounded p-3 min-h-[34vh] cursor-pointer hover:shadow-lg">
           <h1 className="font-bold text-2xl text-slate-600">Fashion</h1>
-          <img src={cat_fashion_img} alt="" className="max-w-[10em] " />
+          <img src={cat_fashion_img} alt="" className="max-w-[17em] md:max-w-[10em] " />
         </div>
-        <div className="bg-slate-300 rounded p-3 min-h-[30vh] relative cursor-pointer hover:shadow-lg">
+        <div className="bg-slate-300 rounded p-3 min-h-[50vh] relative cursor-pointer hover:shadow-lg">
           <h1 className="font-bold text-2xl text-slate-800">Electronics</h1>
           <img
             src={cat_electronic_img}
             alt=""
-            className="absolute right-0 bottom-0"
+            className="absolute right-0 bottom-0 sm:max-w-[10em] md:max-w-[18em] "
           />
         </div>
         <div className="bg-slate-300 rounded p-3 min-h-[30vh] cursor-pointer hover:shadow-lg">
           <h1 className="font-bold text-2xl text-slate-600">Home & Living</h1>
           <img src={cat_living_img} alt="" />
         </div>
-        <div className="bg-slate-300 rounded p-3 min-h-[30vh] relative cursor-pointer hover:shadow-lg">
+        <div className="bg-slate-300 rounded p-3 min-h-[50vh] relative cursor-pointer hover:shadow-lg">
           <h1 className="font-bold text-2xl text-slate-600">
             Grocery & Essentials
           </h1>
-          <img src={cat_grocery} alt="" className="absolute bottom-0" />
+          <img src={cat_grocery} alt="" className="absolute bottom-0 lg:max-w-[16em] md:max-w-[7em]" />
         </div>
-        {/* <div className="bg-slate-300 rounded p-3 min-h-[30vh] ">
-        <h1>Pharmaceutical</h1>
-      </div> */}
       </div>
     </section>
   );

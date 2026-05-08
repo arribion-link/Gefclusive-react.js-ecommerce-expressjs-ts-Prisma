@@ -5,14 +5,14 @@ const BestSelling = () => {
   return (
     <section className="p-4">
       <div className="relative mb-[3em] ">
-        <div className="bg-sky-600 flex-2 min-h-[40vh] p-4 rounded">
-          <h1 className="text-slate-50 font-bold text-[clamp(1.3em,5vw,2em)]">
+        <div className="bg-sky-600 flex-2 min-h-[40vh] md:flex md:flex-col flex-row p-4 rounded">
+          <h1 className="text-slate-50 font-bold text-[clamp(2em,5vw,3em)]">
             Explore some of our <br /> best selling product
           </h1>
           <img
             src={bestseller_drone}
             alt=""
-            className="max-w-[35em] absolute right-0 -top-25"
+            className="sm:max-w-[20em] md:max-w-[25em] max-w-[35em] relative md:absolute sm:-left-[6em] right-0 md:-top-25"
           />
         </div>
       </div>
