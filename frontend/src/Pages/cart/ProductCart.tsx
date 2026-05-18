@@ -4,7 +4,7 @@ import mpesa_logo from "../../assets/mpesa-logo.png";
 import paypal_logo from "../../assets/paypal-logo.png"
 const ProductCart = () => {
   return (
-    <section className="mx-4 min-h-screen md:mx-[4em] flex gap-8 my-[2em]">
+    <section className="mx-4 min-h-screen md:mx-[4em] md:flex gap-8 my-[2em]">
       <div className="flex-3 border p-4 rounded">
         <h1 className="text-2xl font-bold">Your Cart</h1>
         <div className="my-4 gap-3 flex flex-col">
@@ -13,7 +13,7 @@ const ProductCart = () => {
           <CartCard />
         </div>
       </div>
-      <div className="flex-2 shadow p-4 rounded bg-slate-50">
+      <div className="flex-2 mt-8 shadow p-4 rounded bg-slate-50">
         <h1 className="text-2xl font-bold">Checkout</h1>
         <div>
           <p>Total: $300</p>
@@ -73,21 +73,21 @@ const ProductCart = () => {
             <p className="text-slate-600 text-2xl ">Payment Method:</p>
             <div className="flex flex-col gap-3">
               <span className="flex items-center justify-between border border-slate-300 px-2 rounded my-1">
-                <span>
+                <span className="flex gap-3">
                   <input type="radio" />
                   <label>Credit Card</label>
                 </span>
                 <img src={card_payment_logos} alt="" className="max-w-[12em]" />
               </span>
               <span className="flex items-center justify-between border border-slate-300 px-2 rounded my-1">
-                <span>
+                <span className="flex gap-3">
                   <input type="radio" />
                   <label>PayPal</label>
                 </span>
                 <img src={paypal_logo} alt="" className="max-w-[5em]" />
               </span>
               <span className="flex items-center justify-between border border-slate-300 px-2 rounded my-1">
-                <span>
+                <span className="flex gap-3">
                   <input type="radio" />
                   <label>mpesa</label>
                 </span>
