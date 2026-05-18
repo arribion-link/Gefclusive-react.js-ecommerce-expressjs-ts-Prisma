@@ -31,7 +31,7 @@ const Header = () => {
                 <NavLink to={link.path}>{link.name}</NavLink>
               </li>
             ))}
-            <a href="/admin" target="_blank">
+            <a href="/admin/home" target="_blank">
               <button className="px-4 py-1 text-[5px] hover:cursor-pointer duration-100/90 border border-slate-400 rounded-3xl">
                 Admin-panel
               </button>
@@ -59,21 +59,21 @@ const Header = () => {
           </Link>
 
           <div className="flex items-center gap-4 ">
-            {
-              useAuth() ? <span>
-              <img
-                src="https://placehold.net/avatar.svg"
-                alt="jeff"
-                className="max-w-[2em] bg-gray-200 border border-slate-500 rounded-full "
-              />
-            </span>: 
-            <Link to="/auth/register">
-              <button className="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-800">
-                Sign Up
-              </button>
-            </Link>
-            }
-           
+            {useAuth() ? (
+              <span>
+                <img
+                  src="https://placehold.net/avatar.svg"
+                  alt="jeff"
+                  className="max-w-[2em] bg-gray-200 border border-slate-500 rounded-full "
+                />
+              </span>
+            ) : (
+              <Link to="/auth/register">
+                <button className="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-800">
+                  Sign Up
+                </button>
+              </Link>
+            )}
           </div>
         </div>
       </header>

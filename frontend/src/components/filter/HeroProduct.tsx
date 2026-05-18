@@ -53,7 +53,7 @@ const HeroProduct = () => {
     <div className="flex relative">
       {/* Main Image */}
       <div className="min-h-[70vh]">
-          <h1 className="text-[clamp(1.4em,5vw,2.5em)] font-bold text-amber-800/30">NOW TO SELLING</h1>
+          <h1 className="text-[clamp(1.4em,5vw,2.5em)] font-bold text-amber-800/30">NOW BEST SELLING</h1>
         <img
           src={heroProductData[currentItem].image}
           alt={heroProductData[currentItem].name}
